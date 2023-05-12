@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container {
+    position: relative;
+    max-width: 1000px;
+    max-height: 700px;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+    
+}
+.image {
+    display: flex;
+    transition: transform .4s ease-in-out;
+    
+}
+.image img {
+    object-fit: cover;
+}
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .5;
+    cursor: pointer;
+    color: white;
+    font-size: 3rem; 
+}
+.icon.prev {
+    left: .5rem;
+}
+.icon.next {
+    right: .5rem;
+}
+.icon:hover {
+    opacity: 1;
+}
